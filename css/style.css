@@ -1,0 +1,385 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+line-height:1.6;
+}
+
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0px 25px;
+background: linear-gradient(to right, #4facfe, #00f2fe);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+.logo img{
+height:60px;
+}
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+padding:6px 12px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+background:#3498db;
+border-radius:5px;
+}
+
+
+/* BANNER */
+body{
+  margin:0;
+  padding:0;
+}
+.banner{
+position:relative;
+height:500px;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:500px;
+object-fit:cover;
+display:none;
+}
+
+.slide.active{
+display:block;
+}
+
+.banner-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:rgba(0,0,0,0.5);
+color:white;
+padding:25px 40px;
+border-radius:10px;
+text-align:center;
+}
+
+
+/* ABOUT */
+.about-text{
+font-size:20px;
+color:#ffffff;
+}
+.about{
+padding:50px;
+background:#00ccff;
+}
+
+.about-container{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.about img{
+width:400px;
+border-radius:10px;
+}
+
+.about-text{
+max-width:600px;
+}
+
+
+/* COURSES */
+
+.courses{
+padding:50px;
+text-align:center;
+}
+
+.courses h2{
+margin-bottom:30px;
+}
+
+.course-box{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.box{
+background:#ecf0f1;
+padding:20px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.box img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+
+/* GALLERY */
+
+.gallery{
+padding:50px;
+background:#ecf0f1;
+text-align:center;
+}
+
+.gallery h2{
+margin-bottom:30px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+
+/* CONTACT */
+
+/* Contact Section */
+.contact-section{
+  padding:60px 10%;
+  background:#f5f7fa;
+  text-align:center;
+}
+
+.contact-section h2{
+  font-size:32px;
+  margin-bottom:40px;
+}
+
+/* Container */
+.contact-container{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+/* Contact Info */
+.contact-info{
+  flex:1;
+  background:lab(36.74% 75 -100.38);
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  text-align:left;
+}
+.con-text{
+font-size:20px;
+color:#ffffff;
+}
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid #0032fa;
+  border-radius:6px;
+}
+/* Contact Form */
+.contact-form{
+  flex:1;
+  background:lab(36.74% 75 -100.38);
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid #0032fa;
+  border-radius:6px;
+}
+
+/* Button */
+.contact-form button{
+  background:#2193b0;
+  color:white;
+  padding:12px 25px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.contact-form button:hover{
+  background:#176f86;
+}
+
+/* FOOTER */
+
+footer{
+background:#2c3e50;
+color:rgb(255, 255, 255);
+text-align:center;
+padding:20px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+.about-container{
+flex-direction:column;
+}
+
+.about img{
+width:100%;
+}
+/* FIX MOBILE WIDTH */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+overflow-x:hidden;
+}
+
+/* images responsive */
+img{
+max-width:100%;
+height:auto;
+}
+
+/* banner image full width */
+.slide{
+width:100%;
+object-fit:cover;
+}
+}
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+header{
+flex-direction:column;
+padding:10px;
+text-align:center;
+}
+
+.logo img{
+height:45px;
+}
+
+nav ul{
+flex-direction:column;
+padding:0;
+}
+
+nav ul li{
+margin:8px 0;
+}
+
+/* Banner */
+.banner{
+height:350px;
+}
+
+.slide{
+height:350px;
+}
+
+.banner-text{
+width:80%;
+padding:20px;
+}
+
+.banner-text h1{
+font-size:24px;
+}
+
+.banner-text p{
+font-size:14px;
+}
+
+/* About */
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about img{
+width:100%;
+}
+
+/* Courses */
+.course-box{
+flex-direction:column;
+align-items:center;
+}
+
+.box{
+width:90%;
+}
+
+/* Gallery */
+.gallery-grid{
+grid-template-columns:1fr 1fr;
+}
+
+/* Contact */
+.contact-container{
+flex-direction:column;
+}
+
+}
